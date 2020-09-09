@@ -13,23 +13,25 @@ public class Ente{
 		System.out.println("See the duck swimming?");
 	}
 	
-	public void anzeigen() {
+	public String anzeigen() {
 		System.out.println("I'm a duck!");
+		String anzeigen = "res\\ente.png";
+		return anzeigen;
 	}
 	
 	public void setFlugverhalten(Flugverhalten fv) {
 		flugEigenschaft = fv;
 	}
 	
-	public void fliegenAusfuehren() {
-		flugEigenschaft.fliegen();
+	public String fliegenAusfuehren() {
+		return flugEigenschaft.fliegen();
 	}
 	
 	public void setQuakverhalten(Quakverhalten qv) {
 		quakArt = qv;
 	}
 	
-	public void quakenAusfuehren() {
-		quakArt.quaken();
+	public String quakenAusfuehren() {
+		return quakArt.quaken();
 	}
 }

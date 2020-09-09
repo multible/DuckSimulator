@@ -1,10 +1,6 @@
 
 public interface Quakverhalten {
 	
-	public void quaken();
+	public String quaken();
 
-}
-
-interface Quaken extends Quakverhalten{
-	void quaken();
 }

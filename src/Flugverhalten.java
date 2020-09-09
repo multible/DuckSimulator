@@ -1,6 +1,7 @@
 
+
 public interface Flugverhalten {
 
-	public void fliegen();
+	public String fliegen();
 	
 }
