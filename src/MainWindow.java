@@ -16,7 +16,7 @@ import javax.swing.JTextField;
 
 public class MainWindow {
 
-	private JFrame frmDucksimluator;
+	private JFrame frmDuckSimulator;
 	private JTextField txtQuak;
 	private JTextField txtFlug;
 
@@ -28,7 +28,7 @@ public class MainWindow {
 			public void run() {
 				try {
 					MainWindow window = new MainWindow();
-					window.frmDucksimluator.setVisible(true);
+					window.frmDuckSimulator.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -49,19 +49,32 @@ public class MainWindow {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		frmDucksimluator = new JFrame();
-		frmDucksimluator.getContentPane().setBackground(Color.WHITE);
-		frmDucksimluator.setTitle("DuckSimluator");
-		frmDucksimluator.setResizable(false);
-		frmDucksimluator.setBounds(100, 100, 550, 400);
-		frmDucksimluator.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frmDucksimluator.getContentPane().setLayout(null);
+		frmDuckSimulator = new JFrame();
+		frmDuckSimulator.getContentPane().setBackground(Color.WHITE);
+		frmDuckSimulator.setTitle("DuckSimulator");
+		frmDuckSimulator.setResizable(false);
+		frmDuckSimulator.setBounds(100, 100, 550, 400);
+		frmDuckSimulator.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmDuckSimulator.getContentPane().setLayout(null);
 		
 		
+<<<<<<< HEAD
+=======
+
+		
+		JButton btnNewButton_1_1 = new JButton("New button");
+		btnNewButton_1_1.setBounds(42, 185, 89, 23);
+		frmDuckSimulator.getContentPane().add(btnNewButton_1_1);
+		
+		JButton btnNewButton_3 = new JButton("New button");
+		btnNewButton_3.setBounds(42, 219, 89, 23);
+		frmDuckSimulator.getContentPane().add(btnNewButton_3);
+		
+>>>>>>> afd5a525eb9e4d567f86efc0d5006a8cc41ee77b
 		JLabel lblNewLabel = new JLabel("");
 		lblNewLabel.setIcon(new ImageIcon("res\\ente logo.png"));
 		lblNewLabel.setBounds(174, 24, 315, 218);
-		frmDucksimluator.getContentPane().add(lblNewLabel);
+		frmDuckSimulator.getContentPane().add(lblNewLabel);
 		
 		
 		JButton btnMoorEnte = new JButton("Moorente");
@@ -104,7 +117,7 @@ public class MainWindow {
 			}
 		});
 		btnEnte.setBounds(42, 83, 89, 23);
-		frmDucksimluator.getContentPane().add(btnEnte);
+		frmDuckSimulator.getContentPane().add(btnEnte);
 		
 		JButton btnReset = new JButton("Reset");
 		btnReset.addMouseListener(new MouseAdapter() {
@@ -116,19 +129,19 @@ public class MainWindow {
 			}
 		});
 		btnReset.setBounds(42, 253, 89, 23);
-		frmDucksimluator.getContentPane().add(btnReset);
+		frmDuckSimulator.getContentPane().add(btnReset);
 		
 		txtQuak = new JTextField();
 		txtQuak.setText("testText");
 		txtQuak.setBounds(174, 275, 150, 20);
-		frmDucksimluator.getContentPane().add(txtQuak);
+		frmDuckSimulator.getContentPane().add(txtQuak);
 		txtQuak.setColumns(10);
 		
 		txtFlug = new JTextField();
 		txtFlug.setText("testText");
 		txtFlug.setColumns(10);
 		txtFlug.setBounds(359, 275, 164, 20);
-		frmDucksimluator.getContentPane().add(txtFlug);
+		frmDuckSimulator.getContentPane().add(txtFlug);
 		
 		JButton btnStockEnte = new JButton("Stockente");
 		btnStockEnte.addMouseListener(new MouseAdapter() {
@@ -142,7 +155,7 @@ public class MainWindow {
 			}
 		});
 		btnStockEnte.setBounds(42, 117, 89, 23);
-		frmDucksimluator.getContentPane().add(btnStockEnte);
+		frmDuckSimulator.getContentPane().add(btnStockEnte);
 	
 		JButton btnGummiEnte = new JButton("Gummiente");
 		btnGummiEnte.addMouseListener(new MouseAdapter() {
@@ -155,6 +168,6 @@ public class MainWindow {
 			}
 		});
 		btnGummiEnte.setBounds(42, 151, 89, 23);
-		frmDucksimluator.getContentPane().add(btnGummiEnte);
+		frmDuckSimulator.getContentPane().add(btnGummiEnte);
 	}
 }
