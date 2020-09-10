@@ -1,37 +1,16 @@
-/Duesenantriebsfliegen.class
-/Ente.class
-/Fluegelschlagen.class
-/Flugverhalten.class
-/Gleiten.class
-/Gummiente.class
-/MainWindow$1.class
 /MainWindow$2.class
 /MainWindow$3.class
 /MainWindow$4.class
 /MainWindow$5.class
-<<<<<<< HEAD
 /MoorEnte.class
 /MainWindow$6.class
-=======
-/MainWindow.class
-/NichtFliegen.class
-/Quaken.class
-/Quakverhalten.class
-/Quietschen.class
-/Still.class
-/StockEnte.class
->>>>>>> afd5a525eb9e4d567f86efc0d5006a8cc41ee77b
 /ente logo.png
 /ente.jpg
 /ente.png
 /gummiente.jpg
 /gummiente.png
-<<<<<<< HEAD
 /moorente.jpg
 /stockente.png
 /TonEnte.class
 /MainWindow$7.class
 /tonente.jpg
-=======
-/stockente.png
->>>>>>> afd5a525eb9e4d567f86efc0d5006a8cc41ee77b
