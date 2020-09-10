@@ -75,7 +75,7 @@ public class MainWindow {
 				
 			}
 		});
-		btnMoorEnte.setBounds(42, 185, 89, 23);
+		btnMoorEnte.setBounds(33, 185, 121, 23);
 		frmDuckSimulator.getContentPane().add(btnMoorEnte);
 		
 		JButton btnTonEnte = new JButton("Tonente");
@@ -88,7 +88,7 @@ public class MainWindow {
 				txtQuak.setText(tonEnte.quakenAusfuehren());
 			}
 		});
-		btnTonEnte.setBounds(42, 219, 89, 23);
+		btnTonEnte.setBounds(33, 219, 121, 23);
 		frmDuckSimulator.getContentPane().add(btnTonEnte);
 		
 
@@ -103,7 +103,7 @@ public class MainWindow {
 				txtQuak.setText(ente.quakenAusfuehren());
 			}
 		});
-		btnEnte.setBounds(42, 83, 89, 23);
+		btnEnte.setBounds(33, 83, 121, 23);
 		frmDuckSimulator.getContentPane().add(btnEnte);
 		
 		JButton btnReset = new JButton("Reset");
@@ -115,7 +115,7 @@ public class MainWindow {
 				txtQuak.setText(null);
 			}
 		});
-		btnReset.setBounds(42, 253, 89, 23);
+		btnReset.setBounds(33, 253, 121, 23);
 		frmDuckSimulator.getContentPane().add(btnReset);
 		
 		txtQuak = new JTextField();
@@ -141,7 +141,7 @@ public class MainWindow {
 				txtQuak.setText(stockEnte.quakenAusfuehren());
 			}
 		});
-		btnStockEnte.setBounds(42, 117, 89, 23);
+		btnStockEnte.setBounds(33, 117, 121, 23);
 		frmDuckSimulator.getContentPane().add(btnStockEnte);
 	
 		JButton btnGummiEnte = new JButton("Gummiente");
@@ -154,7 +154,7 @@ public class MainWindow {
 				txtQuak.setText(GummiEnte.quakenAusfuehren());
 			}
 		});
-		btnGummiEnte.setBounds(42, 151, 89, 23);
+		btnGummiEnte.setBounds(33, 151, 121, 23);
 		frmDuckSimulator.getContentPane().add(btnGummiEnte);
 	}
 }
