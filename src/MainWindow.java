@@ -58,20 +58,40 @@ public class MainWindow {
 		frmDucksimluator.getContentPane().setLayout(null);
 		
 		
-
-		
-		JButton btnNewButton_1_1 = new JButton("New button");
-		btnNewButton_1_1.setBounds(42, 185, 89, 23);
-		frmDucksimluator.getContentPane().add(btnNewButton_1_1);
-		
-		JButton btnNewButton_3 = new JButton("New button");
-		btnNewButton_3.setBounds(42, 219, 89, 23);
-		frmDucksimluator.getContentPane().add(btnNewButton_3);
-		
 		JLabel lblNewLabel = new JLabel("");
 		lblNewLabel.setIcon(new ImageIcon("res\\ente logo.png"));
 		lblNewLabel.setBounds(174, 24, 315, 218);
 		frmDucksimluator.getContentPane().add(lblNewLabel);
+		
+		
+		JButton btnMoorEnte = new JButton("Moorente");
+		btnMoorEnte.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {				
+				Ente moorEnte = new MoorEnte(new Quaken(), new Duesenantriebsfliegen());
+				lblNewLabel.setIcon(new ImageIcon(moorEnte.anzeigen())); 				
+				txtFlug.setText(moorEnte.fliegenAusfuehren());
+				txtQuak.setText(moorEnte.quakenAusfuehren());
+				
+			}
+		});
+		btnMoorEnte.setBounds(42, 185, 89, 23);
+		frmDucksimluator.getContentPane().add(btnMoorEnte);
+		
+		JButton btnTonEnte = new JButton("Tonente");
+		btnTonEnte.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				Ente tonEnte = new TonEnte(new Still(), new NichtFliegen());
+				lblNewLabel.setIcon(new ImageIcon(tonEnte.anzeigen())); 				
+				txtFlug.setText(tonEnte.fliegenAusfuehren());
+				txtQuak.setText(tonEnte.quakenAusfuehren());
+			}
+		});
+		btnTonEnte.setBounds(42, 219, 89, 23);
+		frmDucksimluator.getContentPane().add(btnTonEnte);
+		
+
 		
 		JButton btnEnte = new JButton("Ente");
 		btnEnte.addMouseListener(new MouseAdapter() {
